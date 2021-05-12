@@ -5,6 +5,7 @@ import java.util.regex.*;
 public class ValidatePin {
 	
 	public static boolean isValidPinCode(String pinCode) {
+		
 		String regex = "[0-9]{6}";
 		
         Pattern p = Pattern.compile(regex);
@@ -19,7 +20,7 @@ public class ValidatePin {
 
 	public static void main(String[] args) {
 		
-		// Test Case 1:
+		// Test Case
         String num1 = "400088";
         System.out.println( num1 + " : " + isValidPinCode(num1));
         
