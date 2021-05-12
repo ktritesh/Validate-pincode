@@ -6,7 +6,7 @@ public class ValidatePin {
 	
 	public static boolean isValidPinCode(String pinCode) {
 		
-		String regex = "^[0-9]{6}";
+		String regex = "^[0-9]{6}$";
 		
         Pattern p = Pattern.compile(regex);
         
@@ -27,6 +27,10 @@ public class ValidatePin {
 		// Test Case 2
         String num2 = "A400088";
         System.out.println( num2 + " : " + isValidPinCode(num2));
+        
+		// Test Case 3
+        String num3 = "A400088B";
+        System.out.println( num3 + " : " + isValidPinCode(num3));
         
 	}
 
